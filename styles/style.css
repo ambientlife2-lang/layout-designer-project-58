@@ -323,12 +323,13 @@ h3 {
     text-decoration: none;
     color: var(--color-white);
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .header__btn:hover {
-    transform: scale(0.97);    
-    background-color: #EA7600;
+    transform: scale(0.97);
+    color: var(--color-white);
+    background-color:#EA7600 ;
 }
 
 
@@ -909,7 +910,7 @@ h3 {
 .subscribe-title {
     max-width: 393px;
     color: var(--color-white);
-    
+
 
 }
 
@@ -921,22 +922,25 @@ h3 {
     margin-bottom: 9px;
     color: var(--color-white);
 }
+
 .subscribe__input-group {
     display: flex;
-    gap:0;
+    gap: 0;
 
 }
 
 .subscribe__input {
-    width: 423px;  
+    width: 423px;
     height: 50px;
     padding: 15px;
     outline: none;
+   
 }
 
-.subscribe__button {   
+.subscribe__button {
     width: 70px;
     height: 50px;
+    display: flex;
     position: relative;
     overflow: hidden;
     border: none;
@@ -947,21 +951,19 @@ h3 {
 .subscribe__button::before {
     content: "";
     position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url("/layout-designer-project-58/images/send.svg");
-    background-size: 24px;
+    width: 22px;
+    height: 22px;
+    left: 23px;
+    top: 13px;
+    background-image: url("/images/send.svg");
+    background-size: contain;
     background-repeat: no-repeat;
-   ;
-    
+    background-position: center;
 }
 
 .subscribe__button:hover {
-   transform: scale(0.97);  
-   background-color: #EA7600;  
+    transform: scale(0.97);
+    background-color: #EA7600;
 }
 
 .subscribe__note {
@@ -989,4 +991,10 @@ h3 {
 
 .footer__credits a {
     color: var(--blue);
+}
+
+.subscribe__input::placeholder {
+    font-size: 12px;
+    color: #757575;
+    opacity: 0.2;
 }
