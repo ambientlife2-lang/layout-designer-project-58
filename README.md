@@ -1,2 +1,0 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/ambientlife2-lang/layout-designer-project-58/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ambientlife2-lang/layout-designer-project-58/actions)

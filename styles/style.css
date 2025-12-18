@@ -1,0 +1,1000 @@
+/** CSS STYLE **/
+/**
+  Нормализация блочной модели
+ */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/**
+  Убираем внутренние отступы слева тегам списков,
+  у которых есть атрибут class
+ */
+:where(ul, ol):where([class]) {
+    padding-left: 0;
+}
+
+/**
+  Убираем внешние отступы body и двум другим тегам,
+  у которых есть атрибут class
+ */
+body,
+:where(blockquote, figure):where([class]) {
+    margin: 0;
+}
+
+/**
+  Убираем внешние отступы вертикали нужным тегам,
+  у которых есть атрибут class
+ */
+:where(h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    ol,
+    dl):where([class]) {
+    margin-block: 0;
+}
+
+:where(dd[class]) {
+    margin-left: 0;
+}
+
+:where(fieldset[class]) {
+    margin-left: 0;
+    padding: 0;
+    border: none;
+}
+
+/**
+  Убираем стандартный маркер маркированному списку,
+  у которого есть атрибут class
+ */
+:where(ul[class]) {
+    list-style: none;
+}
+
+:where(address[class]) {
+    font-style: normal;
+}
+
+/**
+  Обнуляем вертикальные внешние отступы параграфа,
+  объявляем локальную переменную для внешнего отступа вниз,
+  чтобы избежать взаимодействие с более сложным селектором
+ */
+p {
+    --paragraphMarginBottom: 24px;
+
+    margin-block: 0;
+}
+
+/**
+  Внешний отступ вниз для параграфа без атрибута class,
+  который расположен не последним среди своих соседних элементов
+ */
+p:where(:not([class]):not(:last-child)) {
+    margin-bottom: var(--paragraphMarginBottom);
+}
+
+
+/**
+  Упрощаем работу с изображениями и видео
+ */
+img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/**
+  Наследуем свойства шрифт для полей ввода
+ */
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+
+html {
+    /**
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
+    height: 100%;
+    /**
+    Убираем скачок интерфейса по горизонтали
+    при появлении / исчезновении скроллбара
+   */
+    scrollbar-gutter: stable;
+}
+
+/**
+  Плавный скролл
+ */
+html,
+:has(:target) {
+    scroll-behavior: smooth;
+}
+
+body {
+    /**
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
+    min-height: 100%;
+    /**
+    Унифицированный интерлиньяж
+   */
+    line-height: 1.6;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+    color: var(--dark)
+}
+
+/**
+  Нормализация высоты элемента ссылки при его инспектировании в DevTools
+ */
+a:where([class]) {
+    display: inline-flex;
+}
+
+/**
+  Курсор-рука при наведении на элемент
+ */
+button,
+label {
+    cursor: pointer;
+}
+
+/**
+  Приводим к единому цвету svg-элементы
+  (за исключением тех, у которых уже указан
+  атрибут fill со значением 'none' или начинается с 'url')
+ */
+:where([fill]:not([fill="none"],
+        [fill^="url"])) {
+    fill: currentColor;
+}
+
+/**
+  Приводим к единому цвету svg-элементы
+  (за исключением тех, у которых уже указан
+  атрибут stroke со значением 'none')
+ */
+:where([stroke]:not([stroke="none"],
+        [stroke^="url"])) {
+    stroke: currentColor;
+}
+
+/**
+  Чиним баг задержки смены цвета при взаимодействии с svg-элементами
+ */
+svg * {
+    transition-property: fill, stroke;
+}
+
+/**
+  Приведение рамок таблиц в классический 'collapse' вид
+ */
+:where(table) {
+    border-collapse: collapse;
+    border-color: currentColor;
+}
+
+/**
+  Удаляем все анимации и переходы для людей,
+  которые предпочитают их не использовать
+ */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    ::before,
+    ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+
+:root {
+    --color-white: #fff;
+    --color-light: #F5F4F0;
+    --light-beige: #d7ccc0;
+    --primary: #FE8A02;
+    --primary-dark: #42413C;
+    --dark: #2A2626;
+    --dark-50: #908D8B;
+    --brown: #b09a81;
+    --blue: #1085c5;
+
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+.hero-light {
+    background: var(--color-light);
+    opacity: .9;
+}
+
+.hero-brown {
+    background: var(--brown);
+    opacity: .9;
+}
+
+.bg {
+    position: relative;
+}
+
+.bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.06;
+
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 100px 0;
+
+}
+
+.header__title {
+    margin-top: 100px;
+    max-width: 600px;
+
+}
+
+
+.header__title span {
+    color: var(--primary);
+}
+
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.hero__image {
+    position: absolute;
+    height: 525px;
+    top: 55px;
+    right: -270px;
+    z-index: -1;
+}
+
+.hero__text {
+    display: flex;
+    margin-top: 185px;
+    gap: 30px;
+}
+
+.flex-basis {
+    flex-basis: 50%;
+}
+
+.flex-basis-2 {
+    flex-basis: 50%;
+}
+
+.header__btn {
+    width: 148px;
+    height: 49px;
+    padding: 11px 24px;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.header__btn:hover {
+    transform: scale(0.97);
+    color: var(--color-white);
+    background-color:#EA7600 ;
+}
+
+
+/* Видео-секция */
+.video-section {
+    margin-top: 100px;
+
+
+}
+
+.video-section__description {
+    margin: 0 auto;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.video-section__title {
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+    vertical-align: bottom;
+    margin-bottom: 30px;
+}
+
+.video-section__title span {
+    color: var(--primary);
+
+}
+
+.video-section__description p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.video-section__player {
+    margin: 0 auto;
+    width: 919px;
+    height: 517px;
+    position: relative;
+    margin-top: -200px;
+
+}
+
+.video-section__image {
+    position: absolute;
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -200px;
+
+}
+
+/* main section*/
+
+.navigation-section {
+    background-color: var(--primary-dark);
+    height: 1091px;
+
+}
+
+.navigation-card__text {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.2;
+    color: var(--color-white)
+}
+
+.navigation-card__text span {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.2;
+    color: var(--primary);
+
+}
+
+.navigation-item {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    width: 350px;
+    padding: 24px;
+    transition: .25s;
+}
+
+.card-number {
+    padding-bottom: 40px;
+    font-size: 64px;
+    font-family: "Neucha";
+    line-height: 1;
+    color: var(--primary-dark);
+    transition: 1s;
+}
+
+.card-title {
+    margin-bottom: 16px;
+    color: var(--primary);
+
+}
+
+.card:not(:first-child) {
+    background-color: var(--color-light);
+
+}
+
+.card-discription {
+    color: var(--dark)
+}
+
+.card:not(:first-child):hover {
+    background-color: var(--primary);
+
+}
+
+.card:hover .card-number,
+.card:hover .card-discription,
+.card:hover .card-title {
+    color: var(--color-white);
+    transform: scale(1.05);
+}
+
+
+/* Секция IKEA */
+
+
+.ikea-effect__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.ikea-effect__subtitle {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ikea-effect__title {
+    margin-top: 0;
+    line-height: 1;
+}
+
+.ikea-effect__image img {
+    max-width: 578px;
+
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+    vertical-align: middle;
+}
+
+.ikea-effect__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.ikea-effect__subtitle {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: var(--dark-50);
+    margin-bottom: 5px;
+
+}
+
+.ikea-effect__text {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40.8px;
+    letter-spacing: 0%;
+    color: var(--dark);
+}
+
+.ikea-effect__label {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+
+    text-transform: uppercase;
+    color: var(--color-white);
+    position: relative;
+    padding: 6px;
+}
+
+.ikea-effect__label::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background-color: var(--brown);
+    z-index: -1;
+}
+
+.ikea-effect__columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px
+}
+
+.ikea-effect__description {
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+}
+
+/* Преждевременная оптимизация */
+.premature-optimization__row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.premature-optimization__image img {
+    max-width: 578px;
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+    vertical-align: middle;
+}
+
+.premature-optimization__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.premature-optimization__subtitle {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: var(--light-beige);
+    margin-bottom: 5px;
+
+}
+
+.premature-optimization__title {
+    color: var(--color-white);
+
+
+}
+
+.premature-optimization__text {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40.8px;
+    letter-spacing: 0%;
+    color: var(--color-white);
+}
+
+.premature-optimization__description {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.premature-optimization__label {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+
+    text-transform: uppercase;
+    color: var(--brown);
+    position: relative;
+    padding: 6px;
+}
+
+.premature-optimization__label::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background-color: var(--color-light);
+    z-index: -1;
+}
+
+.premature-optimization__columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px
+}
+
+.premature-optimization__columns>p {
+    color: var(--color-white);
+}
+
+/* Искажение новизны */
+
+.distortion-of-novelety__row {
+    display: flex;
+    flex-direction: reverse;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.distortion-of-novelety__image img {
+    max-width: 578px;
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+    vertical-align: middle;
+}
+
+.distortion-of-novelety__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+
+.distortion-of-novelety__subtitle {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: var(--dark-50);
+    margin-bottom: 5px;
+
+}
+
+.distortion-of-novelety__title {
+    color: var(--dark);
+
+}
+
+
+.distortion-of-novelety__text {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40.8px;
+    letter-spacing: 0%;
+    color: var(--dark);
+}
+
+
+.distortion-of-novelety__description {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+
+.distortion-of-novelety__label {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+
+    text-transform: uppercase;
+    color: var(--color-white);
+    position: relative;
+    padding: 6px;
+}
+
+.distortion-of-novelety__label::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background-color: var(--brown);
+    z-index: -1;
+}
+
+
+.distortion-of-novelety__columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px
+}
+
+.distortion-of-novelety__columns>p {
+    color: var(--dark);
+}
+
+/*Гиперболическое обесценивание*/
+
+.hyperbolic-depreciation__row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.hyperbolic-depreciation__image img {
+    max-width: 578px;
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+    vertical-align: middle;
+}
+
+.hyperbolic-depreciation__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.hyperbolic-depreciation__subtitle {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: var(--light-beige);
+    margin-bottom: 5px;
+}
+
+
+.hyperbolic-depreciation__title {
+    color: var(--color-white);
+
+}
+
+
+.hyperbolic-depreciation__text {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40.8px;
+    letter-spacing: 0%;
+    color: var(--color-white);
+}
+
+
+.hyperbolic-depreciation__description {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+
+.hyperbolic-depreciation__label {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+
+    text-transform: uppercase;
+    color: var(--brown);
+    position: relative;
+    padding: 6px;
+}
+
+
+.hyperbolic-depreciation__label::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background-color: var(--color-white);
+    z-index: -1;
+}
+
+.hyperbolic-depreciation__columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px
+}
+
+
+.hyperbolic-depreciation__columns>p {
+    color: var(--color-white);
+}
+
+/* Ошибка планирования */
+
+.errors-in-planning__row {
+    display: flex;
+    flex-direction: reverse;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.errors-in-planning__image img {
+    max-width: 578px;
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+    vertical-align: middle;
+}
+
+.errors-in-planning__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.errors-in-planning__subtitle {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: var(--dark-50);
+    margin-bottom: 5px;
+
+}
+
+
+.errors-in-planning__title {
+    color: var(--dark);
+
+}
+
+
+.errors-in-planning__text {
+    font-family: "Neucha";
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40.8px;
+    letter-spacing: 0%;
+    color: var(--dark);
+}
+
+.errors-in-planning__description {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+
+.errors-in-planning__label {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.8px;
+
+    text-transform: uppercase;
+    color: var(--color-white);
+    position: relative;
+    padding: 6px;
+}
+
+
+.errors-in-planning__label::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background-color: var(--brown);
+    z-index: -1;
+}
+
+
+.errors-in-planning__columns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px
+}
+
+.errors-in-planning__columns>p {
+    color: var(--dark);
+}
+
+/*footer*/
+
+.subscribe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 190px;
+    background-color: var(--primary-dark);
+}
+
+.subscribe-title {
+    max-width: 393px;
+    color: var(--color-white);
+
+
+}
+
+.subscribe__label {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 9px;
+    color: var(--color-white);
+}
+
+.subscribe__input-group {
+    display: flex;
+    gap: 0;
+
+}
+
+.subscribe__input {
+    width: 423px;
+    height: 50px;
+    padding: 15px;
+    outline: none;
+   
+}
+
+.subscribe__button {
+    width: 70px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: var(--primary);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.subscribe__button::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 23px;
+    top: 13px;
+    background-image: url("/images/send.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.subscribe__button:hover {
+    transform: scale(0.97);
+    background-color: #EA7600;
+}
+
+.subscribe__note {
+    font-size: 12px;
+    color: var(--color-white)
+}
+
+.subscribe__note a {
+    font-size: 12px;
+    color: var(--color-white);
+}
+
+.subscribe__input-group {
+    display: flex;
+    max-width: 453px;
+    gap: 0px;
+}
+
+.footer__credits {
+    margin-top: 60px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.footer__credits a {
+    color: var(--blue);
+}
+
+.subscribe__input::placeholder {
+    font-size: 12px;
+    color: #757575;
+    opacity: 0.2;
+}
