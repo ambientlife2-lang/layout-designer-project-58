@@ -326,22 +326,24 @@ h3 {
     transition: all 0.3s ease;
     cursor: pointer;
     z-index: 2;
-    
-   
+
+
 }
 
 .header__btn:hover {
     transform: scale(0.97);
     color: var(--color-white);
-    background-color:#EA7600 ;
+    background-color: #EA7600;
 }
 
 
 /* Видео-секция */
 .video-section {
     margin-top: 100px;
-
-
+    margin-bottom: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .video-section__description {
@@ -353,8 +355,6 @@ h3 {
 .video-section__title {
     font-weight: 400;
     line-height: 72px;
-    text-align: center;
-    vertical-align: bottom;
     margin-bottom: 30px;
 }
 
@@ -364,7 +364,6 @@ h3 {
 }
 
 .video-section__description p {
-    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -372,69 +371,77 @@ h3 {
     margin: 0 auto;
     width: 919px;
     height: 517px;
+    margin: -200px auto 0; 
     position: relative;
-    margin-top: -200px;
-
+    top: 200px; /* смещаем сам плеер вниз */
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  
 }
 
 .video-section__image {
-    position: absolute;
-    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+    position: absolute;  
     left: 0;
     right: 0;
     margin: 0 auto;
-    bottom: -200px;
-
+    object-fit: cover; 
 }
 
 /* main section*/
 
 .navigation-section {
     background-color: var(--primary-dark);
-    height: 1091px;
+    margin-top: -200px;
 
 }
 
-.navigation-card__text {
-    font-family: "Neucha";
+.navigation-card__title span {
+    display: block;
+    font-family: "Neucha", sans-serif;
     font-weight: 400;
     font-size: 52px;
     line-height: 1.2;
     color: var(--color-white)
 }
 
-.navigation-card__text span {
-    font-family: "Neucha";
+.navigation-card__title {
+    display: block;
+    font-family: "Neucha", sans-serif;
     font-weight: 400;
     font-size: 52px;
-    line-height: 1.2;
+    line-height: 1.1;
     color: var(--primary);
 
+}
+
+.navigation-title__nowrap {
+    white-space: nowrap;
 }
 
 .navigation-item {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 323px 348px;
+    gap: 30px;
 }
 
 .card {
+
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    width: 350px;
     padding: 24px;
-    transition: .25s;
+    transition: none;
+    justify-content: flex-start;
 }
 
 .card-number {
     padding-bottom: 40px;
     font-size: 64px;
-    font-family: "Neucha";
+    font-family: "Neucha", sans-serif;
     line-height: 1;
     color: var(--primary-dark);
-    transition: 1s;
+    transition: none;
 }
 
 .card-title {
@@ -461,7 +468,7 @@ h3 {
 .card:hover .card-discription,
 .card:hover .card-title {
     color: var(--color-white);
-    
+
 }
 
 
@@ -470,8 +477,8 @@ h3 {
 
 .ikea-effect__row {
     display: flex;
-    justify-content: space-between;
     gap: 30px;
+    align-items: flex-start;
 
 }
 
@@ -487,15 +494,17 @@ h3 {
 
 .ikea-effect__image img {
     max-width: 578px;
+    flex-shrink: 0;
 
     filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
     vertical-align: middle;
 }
 
 .ikea-effect__info {
+    min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: 30px
+    gap: 30px;
 }
 
 .ikea-effect__subtitle {
@@ -541,9 +550,9 @@ h3 {
 
 .ikea-effect__columns {
     display: flex;
-    justify-content: space-between;
+    min-width: 0;
     margin-top: 20px;
-    gap: 30px
+    gap: 30px;
 }
 
 .ikea-effect__description {
@@ -556,7 +565,6 @@ h3 {
 .premature-optimization__row {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
     gap: 30px;
 }
 
@@ -803,8 +811,6 @@ h3 {
 
 .hyperbolic-depreciation__columns {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
     gap: 30px
 }
 
@@ -905,7 +911,8 @@ h3 {
 
 .subscribe {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 122px;
     align-items: center;
     min-height: 190px;
     background-color: var(--primary-dark);
@@ -914,11 +921,16 @@ h3 {
 .subscribe-title {
     max-width: 393px;
     color: var(--color-white);
+}
 
-
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .subscribe__label {
+    display: block;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -930,28 +942,28 @@ h3 {
 .subscribe__input-group {
     display: flex;
     align-items: stretch;
-  
+    
 
 }
 
 .subscribe__input {
     width: 423px;
+    height: 50px;
     border-radius: 0;
     padding: 15px;
     outline: none;
     border: none;
-   
+    font-size: 14px;
 }
 
-
 .subscribe__button {
-    min-width: 70px;
-    line-height: 1;
-    display: flex;
+    width: 70px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
     position: relative;
     padding: 0;
-    overflow: hidden;
-    border: none;
+    flex-shrink: 0;
     background-color: var(--primary);
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -964,7 +976,7 @@ h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("/images/send.svg");
+    background-image: url("../images/send.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -975,25 +987,20 @@ h3 {
     background-color: #EA7600;
 }
 
+
+.subscribe__note a,
 .subscribe__note {
     font-size: 12px;
-    color: var(--color-white)
-}
-
-.subscribe__note a {
-    font-size: 12px;
+    line-height: 1.2;
     color: var(--color-white);
+    margin-top: 8px;
 }
 
-.subscribe__input-group {
-    display: flex;
-    max-width: 453px;
-    
-}
 
 .footer__credits {
     margin-top: 60px;
     font-size: 14px;
+    line-height: 1.5;
     text-align: center;
 
 }
