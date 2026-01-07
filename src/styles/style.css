@@ -339,11 +339,10 @@ h3 {
 }
 
 
-/* Видео-секция */
+/* Видео-секция Main */
 .video-section {
-    text-align: center;
-    position: relative;
-    z-index: 10;
+    text-align: center;  
+    height: 805px;
 }
 
 .video-section__description {
@@ -372,8 +371,7 @@ h3 {
     margin: 0 auto;
     width: 919px;
     height: 517px;
-    margin-bottom: -50px;
-    position: relative;
+    margin-bottom: -200px;
     filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   
 }
@@ -386,12 +384,19 @@ h3 {
     object-fit: cover; 
 }
 
-/* main section*/
+/* navigation section*/
+
+.navigation-section .container {
+  flex-flow: row wrap;
+  align-content: flex-start;
+  padding-top: 200px;
+}
+
+
 
 .navigation-section {
     background-color: var(--primary-dark);
-    margin-top: -100px;
-
+    
 }
 
 .navigation-card__title span {
