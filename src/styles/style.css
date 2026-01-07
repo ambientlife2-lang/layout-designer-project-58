@@ -342,7 +342,7 @@ h3 {
 /* Видео-секция Main */
 .video-section {
     text-align: center;  
-    height: 805px;
+    
 }
 
 .video-section__description {
@@ -376,20 +376,14 @@ h3 {
   
 }
 
-.video-section__image {
-    position: absolute;  
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    object-fit: cover; 
-}
+
 
 /* navigation section*/
 
 .navigation-section .container {
   flex-flow: row wrap;
   align-content: flex-start;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 
