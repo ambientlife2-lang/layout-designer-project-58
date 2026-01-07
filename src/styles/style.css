@@ -277,8 +277,8 @@ h3 {
 
 }
 
+
 .header__title {
-    margin-top: 100px;
     max-width: 600px;
 
 }
@@ -372,6 +372,8 @@ h3 {
     width: 919px;
     height: 517px;
     margin-bottom: -200px;
+    position: relative;
+    z-index: 1;
     filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   
 }
@@ -379,12 +381,6 @@ h3 {
 
 
 /* navigation section*/
-
-.navigation-section .container {
-  flex-flow: row wrap;
-  align-content: flex-start;
-  padding-top: 100px;
-}
 
 
 
@@ -407,7 +403,7 @@ h3 {
     font-family: "Neucha", sans-serif;
     font-weight: 400;
     font-size: 52px;
-    line-height: 1.1;
+    line-height: 1.1пш;
     color: var(--primary);
 
 }
