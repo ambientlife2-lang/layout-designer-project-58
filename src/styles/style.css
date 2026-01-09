@@ -52,6 +52,10 @@ body,
     border: none;
 }
 
+html {
+    scrollbar-gutter: stable;
+}
+
 /**
   Убираем стандартный маркер маркированному списку,
   у которого есть атрибут class
@@ -539,8 +543,6 @@ h3 {
     margin-top: 20px;
     gap: 30px;
 }
-
-
 
 .ikea-effect__description {
     margin-top: 100px;
