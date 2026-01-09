@@ -104,42 +104,19 @@ button {
     font: inherit;
 }
 
-html {
-    /**
-    Пригодится в большинстве ситуаций
-    (когда, например, нужно будет "прижать" футер к низу сайта)
-   */
-    height: 100%;
-    /**
-    Убираем скачок интерфейса по горизонтали
-    при появлении / исчезновении скроллбара
-   */
-    scrollbar-gutter: stable;
-}
-
-/**
-  Плавный скролл
- */
-html,
-:has(:target) {
-    scroll-behavior: smooth;
-}
-
 body {
-    /**
-    Пригодится в большинстве ситуаций
-    (когда, например, нужно будет "прижать" футер к низу сайта)
-   */
-    min-height: 100%;
-    /**
-    Унифицированный интерлиньяж
-   */
+    
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
-
+    font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 
-    color: var(--dark)
+    color: var(--dark);
+
+    overflow-x: hidden;
+
 }
 
 /**
@@ -273,6 +250,19 @@ h3 {
 
 }
 
+
+.hero__text > *,
+.ikea-effect__columns > *,
+.premature-optimization__columns > *,
+.distortion-of-novelety__columns > *,
+.hyperbolic-depreciation__columns > *,
+.errors-in-planning__columns > * {
+    flex-basis: calc(50% - 15px);
+    flex-grow: 0;
+    flex-shrink: 0;
+    word-wrap: break-word; /* Защита от длинного текста в тестах */
+}
+
 .container {
     position: relative;
 
@@ -314,9 +304,11 @@ h3 {
 }
 
 
-
-.flex-basis-2 {
-    flex-basis: 50%;
+.flex-basis {
+   flex-basis: calc(50% - 15px);
+   flex-grow: 0;
+   flex-shrink: 0;
+   
 }
 
 .header__btn {
@@ -548,9 +540,7 @@ h3 {
     gap: 30px;
 }
 
-.ikea-effect__columns >p {
-  flex: 1;
-}
+
 
 .ikea-effect__description {
     margin-top: 100px;
@@ -636,7 +626,7 @@ h3 {
 
 .premature-optimization__columns>p {
     color: var(--color-white);
-    flex: 1;
+ 
    
 }
 
@@ -723,7 +713,7 @@ h3 {
 
 .distortion-of-novelety__columns>p {
     color: var(--dark);
-    flex: 1;
+    
 
 }
 
@@ -812,7 +802,7 @@ h3 {
 
 .hyperbolic-depreciation__columns>p {
     color: var(--color-white);
-    flex: 1;
+    
 }
 
 /* Ошибка планирования */
@@ -899,7 +889,7 @@ h3 {
 
 .errors-in-planning__columns>p {
     color: var(--dark);
-    flex: 1;
+  
 }
 
 /*footer*/
