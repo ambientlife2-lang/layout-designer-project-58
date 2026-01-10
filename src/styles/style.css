@@ -120,7 +120,7 @@ body {
     color: var(--dark);
   
 
-    overflow-x: hidden;
+   
 
 }
 
@@ -266,8 +266,8 @@ h3 {
 .hyperbolic-depreciation__columns > *,
 .errors-in-planning__columns > * {
     flex-basis: calc(50% - 15px);
-    flex-grow: 0;
-    flex-shrink: 0;
+    flex-grow: 1;
+     min-width: 0;
     word-wrap: break-word; /* Защита от длинного текста в тестах */
 }
 
@@ -277,7 +277,7 @@ h3 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 1110px;
+    width: 100%;
     max-width: var(--max-content-width);
     margin: 0 auto;
     padding: 100px 0;
