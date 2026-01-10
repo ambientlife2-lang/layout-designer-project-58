@@ -118,6 +118,7 @@ body {
     font-size: 16px;
 
     color: var(--dark);
+    min-width: 1440px;
 
     overflow-x: hidden;
 
@@ -230,12 +231,12 @@ h3 {
 
 .hero-light {
     background: var(--color-light);
-    opacity: .9;
+    
 }
 
 .hero-brown {
     background: var(--brown);
-    opacity: .9;
+    
 }
 
 .bg {
@@ -251,6 +252,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.1;
+    
 
 }
 
@@ -277,12 +279,14 @@ h3 {
     max-width: var(--max-content-width);
     margin: 0 auto;
     padding: 100px 0;
+    z-index: 1;
  
 
 }
 
 .header__title span {
     color: var(--primary);
+    
 }
 
 .hero__content {
