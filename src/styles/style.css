@@ -263,7 +263,6 @@ h3 {
 .errors-in-planning__columns > * {
     flex-basis: calc(50% - 15px);
     flex-grow: 0;
-    flex-shrink: 0;
     word-wrap: break-word; /* Защита от длинного текста в тестах */
 }
 
@@ -273,7 +272,7 @@ h3 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 1110px;
+   
     max-width: var(--max-content-width);
     margin: 0 auto;
     padding: 100px 0;
