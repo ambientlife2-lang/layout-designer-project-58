@@ -118,7 +118,7 @@ body {
     font-size: 16px;
 
     color: var(--dark);
-    min-width: 1440px;
+    width: 1440px;
 
     overflow-x: hidden;
 
@@ -287,7 +287,7 @@ h3 {
 
 .header .container {
     padding-top: 60px;
-    padding-bottom: 66px;
+    padding-bottom: 60px;
 }
 
 .header__title span {
@@ -475,6 +475,10 @@ h3 {
 
 /* Секция IKEA */
 
+.ikea-effect .container {
+    padding-bottom: 98px; /* Убираем 2px разницы */
+}
+
 
 .ikea-effect__row {
     display: flex;
@@ -561,6 +565,10 @@ h3 {
 }
 
 /* Преждевременная оптимизация */
+.premature-optimization .container {
+    padding-bottom: 46px; /* Это уберет лишние 54px (912 - 858) */
+}
+
 .premature-optimization__row {
     display: flex;
     flex-direction: row-reverse;
