@@ -250,7 +250,7 @@ h3 {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.06;
+    opacity: 0.1;
 
 }
 
@@ -258,11 +258,12 @@ h3 {
 .hero__text > *,
 .ikea-effect__columns > *,
 .premature-optimization__columns > *,
-.distortion-of-novelety__columns > *,
+.distortion-of-novelty__columns > *,
 .hyperbolic-depreciation__columns > *,
 .errors-in-planning__columns > * {
     flex-basis: calc(50% - 15px);
     flex-grow: 0;
+    flex-shrink: 0;
     word-wrap: break-word; /* Защита от длинного текста в тестах */
 }
 
@@ -272,7 +273,7 @@ h3 {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-   
+    width: 1110px;
     max-width: var(--max-content-width);
     margin: 0 auto;
     padding: 100px 0;
@@ -317,7 +318,7 @@ h3 {
 .header__btn {
     position: relative;
     display: inline-block;
-    padding: 11px 24px;
+    padding: 12px 24px;
     background-color: var(--primary);
     text-decoration: none;
     color: var(--color-white);
@@ -633,25 +634,25 @@ h3 {
 
 /* Искажение новизны */
 
-.distortion-of-novelety__row {
+.distortion-of-novelty__row {
     display: flex;
     gap: 30px;
 }
 
-.distortion-of-novelety__image img {
+.distortion-of-novelty__image img {
     max-width: 578px;
     filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
     vertical-align: middle;
 }
 
-.distortion-of-novelety__info {
+.distortion-of-novelty__info {
     display: flex;
     flex-direction: column;
     gap: 30px
 }
 
 
-.distortion-of-novelety__subtitle {
+.distortion-of-novelty__subtitle {
     font-family: "Neucha";
     font-weight: 400;
     font-size: 24px;
@@ -661,13 +662,13 @@ h3 {
 
 }
 
-.distortion-of-novelety__title {
+.distortion-of-novelty__title {
     color: var(--dark);
 
 }
 
 
-.distortion-of-novelety__text {
+.distortion-of-novelty__text {
     font-family: "Neucha";
     font-weight: 400;
     font-size: 34px;
@@ -677,13 +678,13 @@ h3 {
 }
 
 
-.distortion-of-novelety__description {
+.distortion-of-novelty__description {
     margin-top: 100px;
     margin-bottom: 20px;
 }
 
 
-.distortion-of-novelety__label {
+.distortion-of-novelty__label {
     font-family: "Open Sans";
     font-weight: 700;
     font-size: 14px;
@@ -695,7 +696,7 @@ h3 {
     padding: 6px;
 }
 
-.distortion-of-novelety__label::before {
+.distortion-of-novelty__label::before {
     content: "";
     inset: 0;
     position: absolute;
@@ -706,13 +707,13 @@ h3 {
 }
 
 
-.distortion-of-novelety__columns {
+.distortion-of-novelty__columns {
     display: flex;
     margin-top: 20px;
     gap: 30px
 }
 
-.distortion-of-novelety__columns>p {
+.distortion-of-novelty__columns>p {
     color: var(--dark);
     
 
