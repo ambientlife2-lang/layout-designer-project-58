@@ -284,6 +284,12 @@ h3 {
 
 }
 
+
+.header .container {
+    padding-top: 60px;
+    padding-bottom: 66px;
+}
+
 .header__title span {
     color: var(--primary);
     
@@ -967,7 +973,7 @@ h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("/src/images/send.svg");
+    background-image: url("../images/send.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
