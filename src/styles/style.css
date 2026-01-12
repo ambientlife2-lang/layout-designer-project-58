@@ -262,7 +262,7 @@ h3 {
 .distortion-of-novelty__columns > *,
 .hyperbolic-depreciation__columns > *,
 .errors-in-planning__columns > * {
-    flex-basis: calc(50% - 15px);
+    flex-basis: 50%;
     flex-grow: 1;
      min-width: 0;
     word-wrap: break-word; /* Защита от длинного текста в тестах */
@@ -273,9 +273,6 @@ h3 {
 
 .container {
     position: relative;
-
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
     max-width: var(--max-content-width);
     width: 100%;
@@ -286,11 +283,11 @@ h3 {
 
 }
 
-
-.header .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.hero {
+    position: relative;
+    overflow-x: hidden;
 }
+
 
 .header__title span {
     color: var(--primary);
@@ -352,6 +349,8 @@ h3 {
 /* Видео-секция Main */
 .video-section {
     text-align: center;
+    position: relative;
+   
 
 }
 
@@ -421,7 +420,7 @@ h3 {
 .navigation-item {
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 323px 348px;
     gap: 30px;
 }
@@ -475,9 +474,7 @@ h3 {
 
 /* Секция IKEA */
 
-.ikea-effect .container {
-    padding-bottom: 98px; /* Убираем 2px разницы */
-}
+
 
 
 .ikea-effect__row {
@@ -565,9 +562,7 @@ h3 {
 }
 
 /* Преждевременная оптимизация */
-.premature-optimization .container {
-    padding-bottom: 46px; /* Это уберет лишние 54px (912 - 858) */
-}
+
 
 .premature-optimization__row {
     display: flex;
