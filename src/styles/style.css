@@ -116,6 +116,7 @@ body {
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 
     color: var(--dark);
   
@@ -202,6 +203,25 @@ svg * {
 
 
     --max-content-width: 1110px;
+
+}
+
+
+header,
+.video-section,
+.navigation-section,
+.ikea-effect,
+.premature-optimization,
+.distortion-of-novelty,
+.hyperbolic-depreciation,
+.errors-in-planning,
+.footer {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+* {
+    max-width: 100%;
 
 }
 
