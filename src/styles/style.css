@@ -208,22 +208,6 @@ svg * {
 }
 
 
-header,
-.video-section,
-.navigation-section,
-.ikea-effect,
-.premature-optimization,
-.distortion-of-novelty,
-.hyperbolic-depreciation,
-.errors-in-planning,
-.footer {
-    width: 1440px;
-    margin: 0 auto;
-}
-
-
-
-
 h1,
 h2,
 h3 {
@@ -287,12 +271,25 @@ h3 {
 }
 
 
+.hero-light,
+.video-section,
+.navigation-section,
+.hyperbolic-depreciation,
+.ikea-effect,
+.premature-optimization,
+.footer {
+    width: 1440px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
 
 
 .container {
     position: relative;
     box-sizing: border-box;
     max-width: var(--max-content-width);
+    max-width: 1110px;
     width: 100%;
     margin: 0 auto;
     padding: 100px 0;
