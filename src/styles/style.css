@@ -283,7 +283,6 @@ h3 {
 .errors-in-planning__columns > * {
     flex-basis: 50%;
     flex-grow: 1;
-     min-width: 0;
     word-wrap: break-word; /* Защита от длинного текста в тестах */
 }
 
