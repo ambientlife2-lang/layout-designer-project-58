@@ -110,7 +110,11 @@ button {
 }
 
 body {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1440px;
+   
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -1029,3 +1033,31 @@ h3 {
     color: #757575;
     opacity: 0.2;
 }
+
+body > header,
+body > main,
+body > section,
+body > footer {
+    width: 1440px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+
+/* 2. Конкретно для проблемных элементов */
+.hero-light.bg,
+#preview-image.video-section,
+#navigation.navigation-section,
+#ikea-effect.ikea-effect,
+#premature-optimization.premature-optimization,
+section[id="distortion-of-novelty"],
+section[id="hyperbolic-depreciation"],
+section[id="errors-in-planning"],
+footer.footer {
+    width: 1440px !important;
+    min-width: 1440px !important;
+    max-width: 1440px !important;
+}
+
+/* 3. Убедитесь, что body центрирует */
