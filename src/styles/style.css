@@ -417,20 +417,9 @@ h3 {
 }
 
 /* navigation section*/
-
-
 .navigation-section {
     background-color: var(--primary-dark);
-
-}
-
-.navigation-card__title span {
-    display: block;
-    font-family: "Neucha", sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.2;
-    color: var(--color-white)
+    padding: 100px 0;
 }
 
 .navigation-card__title {
@@ -438,9 +427,14 @@ h3 {
     font-family: "Neucha", sans-serif;
     font-weight: 400;
     font-size: 52px;
-    line-height: 1.1;
+    line-height: 1.2;
     color: var(--primary);
+    margin: 0;
+}
 
+.navigation-card__title span {
+    display: block;
+    color: var(--color-white);
 }
 
 .navigation-title__nowrap {
@@ -448,58 +442,80 @@ h3 {
 }
 
 .navigation-item {
-    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 323px 348px;
+    grid-template-rows: auto auto;
     gap: 30px;
+    margin-top: 100px;
 }
 
+/* Карточки */
 .card {
-
     display: flex;
     flex-direction: column;
     text-decoration: none;
     padding: 24px;
-    transition: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     justify-content: flex-start;
+    height: 100%;
+    min-height: 348px;
+    box-sizing: border-box;
 }
 
-.card-number {
-    padding-bottom: 40px;
-    font-size: 64px;
-    font-family: "Neucha", sans-serif;
-    line-height: 1;
-    color: var(--primary-dark);
-    transition: none;
+/* Первая карточка - заголовок */
+.navigation-item .card:first-child {
+    background-color: transparent;
+    padding: 0;
+    min-height: auto;
 }
 
-.card-title {
-    margin-bottom: 16px;
-    color: var(--primary);
-
-}
-
+/* Остальные карточки */
 .card:not(:first-child) {
     background-color: var(--color-light);
-
-}
-
-.card-discription {
-    color: var(--dark)
+    cursor: pointer;
 }
 
 .card:not(:first-child):hover {
     background-color: var(--primary);
-
+    
 }
 
-.card:hover .card-number,
-.card:hover .card-discription,
-.card:hover .card-title {
+.card-number {
+    font-size: 64px;
+    font-family: "Neucha", sans-serif;
+    line-height: 1;
+    color: var(--primary-dark);
+    margin: 0 0 40px 0;
+    transition: color 0.3s ease;
+}
+
+.card-title {
+    font-size: 34px;
+    line-height: 1.2;
+    font-family: "Neucha", sans-serif;
+    color: var(--primary);
+    margin: 0 0 16px 0;
+    transition: color 0.3s ease;
+}
+
+.card-discription {
+    color: var(--dark);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    transition: color 0.3s ease;
+    flex-grow: 1;
+}
+
+/* Hover эффекты для всех карточек кроме первой */
+.card:not(:first-child):hover .card-number,
+.card:not(:first-child):hover .card-title,
+.card:not(:first-child):hover .card-discription {
     color: var(--color-white);
-
 }
+
+
 
 
 /* Секция IKEA */
