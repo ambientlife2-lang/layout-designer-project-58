@@ -92,7 +92,8 @@ p:where(:not([class]):not(:last-child)) {
   Упрощаем работу с изображениями и видео
  */
 img,
-video {
+video,
+iframe {
     display: block;
     max-width: 100%;
     height: auto;
@@ -220,10 +221,8 @@ header,
     margin: 0 auto;
 }
 
-* {
-    max-width: 100%;
 
-}
+
 
 h1,
 h2,
