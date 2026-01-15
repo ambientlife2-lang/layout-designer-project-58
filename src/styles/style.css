@@ -404,9 +404,8 @@ h3 {
 .video-section__image {
     width: 919px;
     height: 517px;
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-    display: block;
-}
+     display: block;
+}  
 
 /* navigation section*/
 .navigation-section {
