@@ -114,7 +114,6 @@ body {
     flex-direction: column;
     align-items: center;
 
-   
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -410,7 +409,7 @@ h3 {
 /* navigation section*/
 .navigation-section {
     background-color: var(--primary-dark);
-    padding: 100px 0;
+    padding-top: 100px;
 }
 
 .navigation-card__title {
@@ -1053,4 +1052,4 @@ h3 {
 }
 
 
-/* 3. Убедитесь, что body центрирует */
+
