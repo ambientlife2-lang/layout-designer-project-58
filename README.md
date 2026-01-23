@@ -1,1 +1,1 @@
-[Макет сайта - Когнетивные искажения] (https://ambientlife-layout.surge.sh)
+[Макет сайта - Когнетивные искажения]  https://ambientlife2-lang.github.io/layout-designer-project-58/
