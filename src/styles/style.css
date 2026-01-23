@@ -112,9 +112,9 @@ button {
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    margin: 0;
+   
+    width: 1440px;
+    margin: 0 auto;
     padding: 0;
     line-height: 1.6;
     font-weight: 400;
@@ -278,6 +278,8 @@ h3 {
 .video-section,
 .navigation-section,
 .hyperbolic-depreciation,
+.distortion-of-novelty,
+.errors-in-planning
 .ikea-effect,
 .premature-optimization,
 .footer {
