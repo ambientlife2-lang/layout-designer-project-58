@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "deploy": "npx surge src --domain ambientlife-layout-58.surge.sh"
+  },
   "devDependencies": {
     "htmlhint": "^1.7.1",
     "stylelint": "^16.25.0",
