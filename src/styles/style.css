@@ -16,30 +16,10 @@
     padding-left: 0;
 }
 
-
-:where(h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    ul,
-    ol,
-    dl):where([class]) {
-    margin-block: 0;
-}
-
-:where(dd[class]) {
-    margin-left: 0;
-}
-
-:where(fieldset[class]) {
-    margin-left: 0;
+h1, h2, h3, p, ul, ol, li {
+    margin: 0;
     padding: 0;
-    border: none;
 }
-
 html {
     scrollbar-gutter: stable;
 }
@@ -200,7 +180,7 @@ svg * {
 h1,
 h2,
 h3 {
-    line-height: 1.2em;
+    line-height: 1.2;
     font-family: "Neucha", cursive;
     font-weight: 400;
     z-index: 1;
@@ -341,9 +321,6 @@ h3 {
     transition: all 0.3s ease;
     cursor: pointer;
     z-index: 2;
-
-
-
 }
 
 .header__btn:hover {
@@ -352,14 +329,14 @@ h3 {
     background-color: #EA7600;
 }
 
-/* Видео-секция Main */
+/* Видео-секция */
+
 .video-section {
     text-align: center;
     position: relative;
     margin: 0 auto;
       
 }
-
 
 .video-section__title {
     font-weight: 400;
@@ -479,7 +456,7 @@ h3 {
     color: var(--dark);
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    line-height: 1.6em;
+    line-height: 1.6;
     margin: 0;
     transition: color 0.3s ease;
     flex-grow: 1;
@@ -1010,7 +987,7 @@ h3 {
 .footer__credits {
     margin-top: 60px;
     font-size: 14px;
-    line-height: 1.5em;
+    line-height: 1.5;
     text-align: center;
 
 }
