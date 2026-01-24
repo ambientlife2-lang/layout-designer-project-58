@@ -16,19 +16,7 @@
     padding-left: 0;
 }
 
-/**
-  Убираем внешние отступы body и двум другим тегам,
-  у которых есть атрибут class
- */
-body,
-:where(blockquote, figure):where([class]) {
-    margin: 0;
-}
 
-/**
-  Убираем внешние отступы вертикали нужным тегам,
-  у которых есть атрибут class
- */
 :where(h1,
     h2,
     h3,
@@ -114,7 +102,7 @@ body {
     width: 1440px;
     margin: 0 auto;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.6em;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -212,7 +200,7 @@ svg * {
 h1,
 h2,
 h3 {
-    line-height: 1.2;
+    line-height: 1.2em;
     font-family: "Neucha", cursive;
     font-weight: 400;
     z-index: 1;
@@ -413,7 +401,7 @@ h3 {
     font-family: "Neucha", sans-serif;
     font-weight: 400;
     font-size: 52px;
-    line-height: 1.2;
+    line-height: 1.2em;
     color: var(--primary);
     margin: 0;
 }
@@ -488,7 +476,7 @@ h3 {
     color: var(--dark);
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.6em;
     margin: 0;
     transition: color 0.3s ease;
     flex-grow: 1;
@@ -953,7 +941,7 @@ h3 {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.6em;
     margin-bottom: 9px;
     color: var(--color-white);
 }
@@ -1019,7 +1007,7 @@ h3 {
 .footer__credits {
     margin-top: 60px;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.5em;
     text-align: center;
 
 }
