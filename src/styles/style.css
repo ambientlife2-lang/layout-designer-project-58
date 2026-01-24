@@ -42,8 +42,7 @@ html {
   чтобы избежать взаимодействие с более сложным селектором
  */
 p {
-    --paragraphMarginBottom: 24px;
-
+    
     margin-block: 0;
 }
 
@@ -255,6 +254,15 @@ h3 {
     position: relative;
 }
 
+.hero__text p {
+    line-height: 1.6em;
+    font-size: 16px;
+}
+
+.hero__text p:not(:last-of-type) {
+    margin-bottom: 25px; 
+}
+
 
 .container {
     position: relative;
@@ -297,7 +305,7 @@ h3 {
 
 .hero__text {
     display: flex;
-    margin-top: 200px;
+    margin-top: 185px;
     gap: 30px;
 }
 
