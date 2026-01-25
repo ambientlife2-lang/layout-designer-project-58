@@ -483,6 +483,7 @@ h3 {
     display: flex;
     gap: 30px;
     align-items: flex-start;
+    padding-top: 100px;
 
 }
 
