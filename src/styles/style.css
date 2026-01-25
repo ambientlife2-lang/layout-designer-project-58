@@ -342,8 +342,8 @@ h3 {
 .video-section {
     text-align: center;
     position: relative;
-    margin: 0 auto;
-      
+    margin: 0 auto; 
+     
 }
 
 .video-section__title {
@@ -995,9 +995,13 @@ h3 {
 .footer__credits {
     margin-top: 60px;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: center;
 
+}
+
+.footer__credits p {
+    padding-bottom: 16px;
 }
 
 .footer__credits a {
