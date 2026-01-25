@@ -343,7 +343,7 @@ h3 {
     text-align: center;
     position: relative;
     margin: 0 auto; 
-     
+    margin-bottom: -200px; 
 }
 
 .video-section__title {
@@ -365,7 +365,7 @@ h3 {
 /* Контейнер для превью */
 .video-section__player {
     margin: 0 auto;
-    margin-bottom: -200px; 
+     
     position: relative;
     z-index: 1;
     width: 919px; 
