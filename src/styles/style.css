@@ -145,9 +145,7 @@ h3 {
     
 }
 
-.hero__text p {
-    line-height: 1.6;
-}
+
 
 .hero__text p:not(:last-of-type) {
     margin-bottom: 30px; 
@@ -660,7 +658,7 @@ h3 {
     font-family: "Neucha";
     font-weight: 400;
     font-size: 34px;
-    line-height: 40.8px;
+    line-height: 1.2;
     letter-spacing: 0%;
     color: var(--color-white);
 }
@@ -732,8 +730,7 @@ h3 {
     font-size: 24px;
     line-height: 28.8px;
     color: var(--dark-50);
-    margin-bottom: 5px;
-
+   
 }
 
 
@@ -791,6 +788,10 @@ h3 {
 .errors-in-planning__columns>p {
     color: var(--dark);
   
+}
+
+.flex-basis__text {
+  margin-top: 16px;
 }
 
 /*footer*/
