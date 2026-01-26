@@ -55,7 +55,7 @@ button {
 
 body {
  
-    max-width:1440px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0;
     line-height: 1.6em;
@@ -147,6 +147,33 @@ h3 {
 }
 
 
+.hero__text > *,
+.ikea-effect__columns > *,
+.premature-optimization__columns > *,
+.distortion-of-novelty__columns > *,
+.hyperbolic-depreciation__columns > *,
+.errors-in-planning__columns > * {
+    flex-basis: 50%;
+    flex-grow: 1;
+    word-wrap: break-word; 
+}
+
+
+.hero-light,
+.video-section,
+.navigation-section,
+.hyperbolic-depreciation,
+.errors-in-planning,
+.distortion-of-novelty,
+.ikea-effect,
+.premature-optimization,
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
 .hero__text p {
     line-height: 1.6em;
     font-size: 16px;
@@ -165,6 +192,7 @@ h3 {
     margin: 0 auto;
     padding: 100px 0;
     z-index: 1;
+ 
 
 }
 
