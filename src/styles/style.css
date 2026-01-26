@@ -55,7 +55,7 @@ button {
 
 body {
  
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
     padding: 0;
     line-height: 1.6em;
@@ -914,9 +914,9 @@ h3 {
 
 
 .footer__credits {
-    margin-top: 76px;
+    margin-top: 60px;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.6em;
     text-align: center;
 
 }
