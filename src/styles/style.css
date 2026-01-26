@@ -146,14 +146,9 @@ h3 {
 
 }
 
-
-
-
-
-
 .hero__text p {
-    line-height: 1.6em;
     font-size: 16px;
+    line-height: 25.6px;
 }
 
 .hero__text p:not(:last-of-type) {
@@ -218,7 +213,7 @@ h3 {
     position: relative;
     display: inline-block;
     padding: 12px 24px;
-    margin-top: 32.7px;
+    margin-top: 33.5px;
     background-color: var(--primary);
     text-decoration: none;
     color: var(--color-white);
