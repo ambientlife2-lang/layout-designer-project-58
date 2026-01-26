@@ -20,17 +20,6 @@ h1, h2, h3, p, ul, ol, li {
     margin: 0;
     padding: 0;
 }
-html {
-    scrollbar-gutter: stable;
-}
-
-
-
-p {
-    
-    margin-block: 0;
-}
-
 
 /**
   Упрощаем работу с изображениями и видео
@@ -787,7 +776,6 @@ h3 {
 
 .errors-in-planning__columns>p {
     color: var(--dark);
-  
 }
 
 .flex-basis__text {
