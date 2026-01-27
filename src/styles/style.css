@@ -891,3 +891,7 @@ h3 {
 
 
 
+.subscribe__input,
+.subscribe__button {
+    box-sizing: border-box; 
+}
