@@ -398,7 +398,7 @@ h3 {
     font-family: "Neucha";
     font-weight: 400;
     font-size: 34px;
-    line-height: 40.8px;
+    line-height: 1.3em;
     letter-spacing: 0%;
     color: var(--dark);
 }
@@ -476,7 +476,7 @@ h3 {
     font-family: "Neucha";
     font-weight: 400;
     font-size: 34px;
-    line-height: 40.8px;
+    line-height: 1.3em;
     letter-spacing: 0%;
     color: var(--color-white);
 }
