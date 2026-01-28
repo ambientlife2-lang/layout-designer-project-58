@@ -426,12 +426,13 @@ h3 {
 
 .ikea-effect__columns {
     display: flex;
-    margin-top: 20px;
     gap: 30px;
 }
 
 .ikea-effect__description {
     margin-top: 100px;
+    margin-bottom: 20px;
+
 }
 
 /* Преждевременная оптимизация */
@@ -507,7 +508,6 @@ h3 {
 
 .premature-optimization__columns {
     display: flex;
-    margin-top: 20px;
     gap: 30px
 }
 
@@ -588,7 +588,6 @@ h3 {
 
 .distortion-of-novelty__columns {
     display: flex;
-    margin-top: 20px;
     gap: 30px
 }
 
@@ -763,7 +762,6 @@ h3 {
 
 .errors-in-planning__columns {
     display: flex;
-    margin-top: 20px;
     gap: 30px
 }
 
