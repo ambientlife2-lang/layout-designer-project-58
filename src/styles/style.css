@@ -797,7 +797,7 @@ h3 {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.6em;
+    line-height: 1.6;
     margin-bottom: 9px;
     color: var(--color-white);
 }
@@ -805,8 +805,8 @@ h3 {
 .subscribe__input-group {
     display: flex;
     align-items: stretch;
-
-
+    margin: 0;
+    padding: 0;
 }
 
 .subscribe__input {
@@ -817,6 +817,7 @@ h3 {
     outline: none;
     border: none;
     font-size: 14px;
+    display: block;
 }
 
 .subscribe__button {
@@ -850,15 +851,12 @@ h3 {
     background-color: #EA7600;
 }
 
-
 .subscribe__note a,
 .subscribe__note {
     font-size: 12px;
     line-height: 1.2;
     color: var(--color-white);
-    margin-top: 8px;
 }
-
 
 .footer__credits {
     margin-top: 60px;
@@ -866,10 +864,6 @@ h3 {
     line-height: 1.6;
     text-align: center;
 
-}
-
-.footer__credits p {
-    padding-bottom: 16px;
 }
 
 .footer__credits a {
@@ -886,5 +880,7 @@ h3 {
 .subscribe__button {
     box-sizing: border-box; 
     height: 50px; 
+    margin: 0;
     vertical-align: top;
+    align-items: stretch;
 }
