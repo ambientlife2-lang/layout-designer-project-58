@@ -854,7 +854,7 @@ h3 {
 .subscribe__note a,
 .subscribe__note {
     font-size: 12px;
-    line-height: 1.2em;
+    line-height: 1.2;
     color: var(--color-white);
     margin-top: 8px;
 }
@@ -863,7 +863,7 @@ h3 {
 .footer__credits {
     margin-top: 60px;
     font-size: 14px;
-    line-height: 1.6em;
+    line-height: 1.6;
     text-align: center;
 
 }
@@ -882,9 +882,9 @@ h3 {
     
 }
 
-
-
 .subscribe__input,
 .subscribe__button {
     box-sizing: border-box; 
+    height: 50px; 
+    vertical-align: top;
 }
