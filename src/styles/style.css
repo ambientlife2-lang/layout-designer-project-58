@@ -391,7 +391,7 @@ h3 {
 }
 
 .ikea-effect__label {
-    font-family: "Open Sans", cursive;
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 16.8px;
@@ -504,6 +504,7 @@ h3 {
 .distortion-of-novelty__row {
     display: flex;
     gap: 30px;
+    align-items: start;
 }
 
 .distortion-of-novelty__image img {
