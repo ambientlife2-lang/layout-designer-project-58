@@ -341,6 +341,10 @@ h3 {
 
 /* Секция IKEA */
 
+.ikea-effect {
+    margin-top: -2px ;
+}
+
 .ikea-effect__row {
     display: flex;
     gap: 30px;
@@ -665,6 +669,10 @@ h3 {
 
 /* Ошибка планирования */
 
+.errors-in-planning {
+    margin-top: -2px;
+}
+
 .errors-in-planning__row {
     display: flex;
     justify-content: space-between;
@@ -748,9 +756,7 @@ h3 {
 
 /*footer*/
 
-.footer {
-    margin-top: -2px;
-}
+
 
 .subscribe {
     display: flex;
