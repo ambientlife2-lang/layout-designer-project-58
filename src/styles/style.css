@@ -459,7 +459,7 @@ h3 {
     font-family: "Neucha";
     font-weight: 400;
     font-size: 34px;
-    line-height: 40.8px;
+    line-height: 1.2;
     letter-spacing: 0%;;
     color: var(--color-white);
 }
@@ -504,7 +504,8 @@ h3 {
 .distortion-of-novelty__row {
     display: flex;
     gap: 30px;
-    align-items: start;
+    
+    
 }
 
 .distortion-of-novelty__image img {
@@ -537,7 +538,7 @@ h3 {
     font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 34px;
-    line-height: 40.8px;
+    line-height: 1.2;
     
     color: var(--dark);
 }
@@ -700,7 +701,7 @@ h3 {
     font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 34px;
-    line-height: 40.8px;
+    line-height: 1.2;
     letter-spacing: 0%;
     color: var(--dark);
 }
