@@ -250,7 +250,7 @@ h3 {
 
 .navigation-card__title {
     display: block;
-    font-family: "Neucha", sans-serif;
+    font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 52px;
     line-height: 1.2em;
@@ -306,7 +306,7 @@ h3 {
 
 .card-number {
     font-size: 64px;
-    font-family: "Neucha", sans-serif;
+    font-family: "Neucha", cursive;
     line-height: 1;
     color: var(--primary-dark);
     margin: 0 0 40px 0;
@@ -316,7 +316,7 @@ h3 {
 .card-title {
     font-size: 34px;
     line-height: 1.2;
-    font-family: "Neucha", sans-serif;
+    font-family: "Neucha", cursive;
     color: var(--primary);
     margin: 0 0 16px 0;
     transition: color 0.3s ease;
@@ -372,7 +372,7 @@ h3 {
 }
 
 .ikea-effect__subtitle {
-    font-family: "Neucha";
+    font-family: "Neucha",cursive;
     font-weight: 400;
     font-size: 24px;
     line-height: 28.8px;
@@ -381,9 +381,9 @@ h3 {
 }
 
 .ikea-effect__text {
-    font-family: "Neucha";
+    font-family: "Neucha",cursive;
     font-weight: 400;
-     font-weight: 400;
+    
     font-size: 34px;
     line-height: 40.8px;
     letter-spacing: 0%;
@@ -391,7 +391,7 @@ h3 {
 }
 
 .ikea-effect__label {
-    font-family: "Open Sans";
+    font-family: "Open Sans", cursive;
     font-weight: 700;
     font-size: 14px;
     line-height: 16.8px;
@@ -443,7 +443,7 @@ h3 {
 }
 
 .premature-optimization__subtitle {
-    font-family: "Neucha",sans-serif;
+    font-family: "Neucha",cursive;
     font-weight: 400;
     font-size: 24px;
     line-height: 28.8px;
@@ -520,7 +520,7 @@ h3 {
 
 
 .distortion-of-novlty__subtitle {
-     font-family: "Neucha";
+     font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 24px;
     line-height: 28.8px;
@@ -533,11 +533,11 @@ h3 {
 }
 
 .distortion-of-novelty__text {
-    font-family: "Neucha";
+    font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 34px;
     line-height: 40.8px;
-    letter-spacing: 0%;
+    
     color: var(--dark);
 }
 
@@ -601,7 +601,7 @@ h3 {
 }
 
 .hyperbolic-depreciation__subtitle {
-    font-family: "Neucha";
+    font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 24px;
     line-height: 28.8px;
@@ -614,7 +614,7 @@ h3 {
 }
 
 .hyperbolic-depreciation__text {
-    font-family: "Neucha";
+    font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 34px;
     line-height: 40.8px;
@@ -629,7 +629,7 @@ h3 {
 }
 
 .hyperbolic-depreciation__label {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 16.8px;
@@ -682,7 +682,7 @@ h3 {
 }
 
 .errors-in-planning__subtitle {
-    font-family: "Neucha";
+    font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 24px;
     line-height: 28.8px;
@@ -696,7 +696,7 @@ h3 {
 }
 
 .errors-in-planning__text {
-    font-family: "Neucha";
+    font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 34px;
     line-height: 40.8px;
@@ -710,7 +710,7 @@ h3 {
 }
 
 .errors-in-planning__label {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 16.8px;
@@ -837,7 +837,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-top: 60px;
+    padding-top: 60px;
     font-size: 14px;
     text-align: center;
 
