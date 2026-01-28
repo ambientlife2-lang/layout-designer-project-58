@@ -856,6 +856,7 @@ h3 {
     font-size: 12px;
     line-height: 1.2;
     color: var(--color-white);
+    margin-top: 10px;
 }
 
 .footer__credits {
@@ -864,6 +865,7 @@ h3 {
     gap: 16px;
     margin-top: 60px;
     font-size: 14px;
+
     text-align: center;
 
 }
