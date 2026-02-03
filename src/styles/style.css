@@ -139,9 +139,10 @@ h3 {
 
 }
 
-.hero {
+.hero-light {
     position: relative;
     overflow-x: hidden;
+
 }
 
 
@@ -756,7 +757,9 @@ h3 {
 }
 
 /*footer*/
-
+.footer {
+    margin-top: -5px;
+}
 
 
 .subscribe {
