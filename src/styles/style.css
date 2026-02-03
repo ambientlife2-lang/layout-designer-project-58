@@ -377,7 +377,7 @@ h3 {
     font-family: "Neucha",cursive;
     font-weight: 400;
     font-size: 24px;
-    line-height: 28.8px;
+    line-height: 28px;
     color: var(--dark-50);
 
 }
@@ -387,7 +387,7 @@ h3 {
     font-weight: 400;
     
     font-size: 34px;
-    line-height: 40.8px;
+    line-height: 40px;
     letter-spacing: 0%;
     color: var(--dark);
 }
@@ -725,7 +725,7 @@ h3 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16.8px;
+    line-height: 16px;
 
     text-transform: uppercase;
     color: var(--color-white);
@@ -757,9 +757,6 @@ h3 {
 }
 
 /*footer*/
-.footer {
-    margin-top: -5px;
-}
 
 
 .subscribe {
