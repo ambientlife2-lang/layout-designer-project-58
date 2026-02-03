@@ -396,7 +396,7 @@ h3 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16.8px;
+    line-height: 16px;
     text-transform: uppercase;
     color: var(--color-white);
     position: relative;
@@ -502,9 +502,7 @@ h3 {
 }
 
 /* Искажение новизны */
-.distortion-of-novelty {
-    margin-top: -2px;
-}
+
 
 
 .distortion-of-novelty__row {
@@ -528,7 +526,7 @@ h3 {
 
 
 .distortion-of-novlty__subtitle {
-     font-family: "Neucha", cursive;
+    font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -849,7 +847,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-top: 60px;
+    padding-top: 72px;
     font-size: 14px;
     text-align: center;
 
