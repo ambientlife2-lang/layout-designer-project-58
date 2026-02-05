@@ -501,8 +501,7 @@ h3 {
 .distortion-of-novelty__row {
     display: flex;
     gap: 30px;
-    
-    
+     
 }
 
 .distortion-of-novelty__image img {
@@ -514,7 +513,7 @@ h3 {
 .distortion-of-novelty__info {
     display: flex;
     flex-direction: column;
-    gap: 30px
+    gap: 30px;
 }
 
 
@@ -536,6 +535,7 @@ h3 {
     font-weight: 400;
     font-size: 34px;
     line-height: 40px;
+   
     color: var(--dark);
 }
 
@@ -616,7 +616,7 @@ h3 {
     font-weight: 400;
     font-size: 34px;
     line-height: 40px;
-    letter-spacing: 0%;;
+
     color: var(--color-white);
 }
 
@@ -746,9 +746,6 @@ h3 {
 }
 
 /*footer*/
-.footer {
-  margin-top: -13px;
-}
 
 .subscribe {
     display: flex;
