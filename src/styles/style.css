@@ -659,7 +659,9 @@ h3 {
 }
 
 /* Ошибка планирования */
-
+.errors-in-planning {
+    margin-top: -2px;
+}
 
 .errors-in-planning__row {
     display: flex;
