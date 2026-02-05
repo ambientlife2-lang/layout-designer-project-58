@@ -345,7 +345,7 @@ h3 {
 
 .ikea-effect__row {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: reverse;
     gap: 30px;
     
 }
@@ -675,7 +675,7 @@ h3 {
 .errors-in-planning__info {
     display: flex;
     flex-direction: column;
-    gap: 30px
+    gap: 30px;
 }
 
 .errors-in-planning__subtitle {
@@ -696,6 +696,7 @@ h3 {
     font-family: "Neucha", cursive;
     font-weight: 400;
     font-size: 34px;
+    line-height: 40px;
     letter-spacing: 0%;
     color: var(--dark);
 }
@@ -741,7 +742,9 @@ h3 {
 }
 
 /*footer*/
-
+.footer {
+  margin-top: -2px;
+}
 
 .subscribe {
     display: flex;
