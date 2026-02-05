@@ -418,6 +418,7 @@ h3 {
 
 /* Преждевременная оптимизация */
 
+
 .premature-optimization__row {
     display: flex;
     flex-direction: row-reverse;
@@ -658,6 +659,10 @@ h3 {
 }
 
 /* Ошибка планирования */
+.errors-in-planning {
+  margin-top: -2px;
+
+}
 
 
 .errors-in-planning__row {
@@ -711,7 +716,6 @@ h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-
     text-transform: uppercase;
     color: var(--color-white);
     position: relative;
