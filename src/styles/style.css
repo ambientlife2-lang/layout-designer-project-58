@@ -169,7 +169,7 @@ h3 {
 
 .hero__text {
     display: flex;
-    margin-top: 200px;
+    margin-top: 198px;
     gap: 30px;
 }
 
@@ -341,9 +341,7 @@ h3 {
 }
 
 /* Секция IKEA */
-.ikea-effect {
-    margin-top: -2px;
-}
+
 
 .ikea-effect__row {
     display: flex;
@@ -419,9 +417,7 @@ h3 {
 }
 
 /* Преждевременная оптимизация */
-.premature-optimization {
-    margin-top: -2px;
-}
+
 
 .premature-optimization__row {
     display: flex;
@@ -499,9 +495,6 @@ h3 {
 }
 
 /* Искажение новизны */
-.distortion-of-novelty {
-    margin-top: -2px;
-}
 
 
 .distortion-of-novelty__row {
@@ -665,9 +658,6 @@ h3 {
 }
 
 /* Ошибка планирования */
-.errors-in-planning {
-    margin-top: -2px;
-}
 
 .errors-in-planning__row {
     display: flex;
@@ -751,9 +741,7 @@ h3 {
 
 /*footer*/
 
-.footer {
-    margin-top: -2px;
-}
+
 
 .subscribe {
     display: flex;
