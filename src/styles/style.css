@@ -341,13 +341,6 @@ h3 {
 }
 
 /* Секция IKEA */
-.header {
-    margin-top: - 6px;
-}
-
-.ikea_effect {
-    margin-top: -1px;
-}
 
 .ikea-effect__row {
     display: flex;
@@ -423,9 +416,7 @@ h3 {
 }
 
 /* Преждевременная оптимизация */
- .premature-optimization {
-    margin-top: -2px;
- }
+
 
 .premature-optimization__row {
     display: flex;
@@ -504,9 +495,6 @@ h3 {
 
 /* Искажение новизны */
 
-.distortion-of-novelty {
-    margin-top: -1px;
-}
 
 .distortion-of-novelty__row {
     display: flex;
@@ -669,9 +657,7 @@ h3 {
 }
 
 /* Ошибка планирования */
-.errors-in-planning {
-    margin-top: -15px;
-}
+
 
 .errors-in-planning__row {
     display: flex;
@@ -754,9 +740,6 @@ h3 {
 }
 
 /*footer*/
-.footer {
-    margin-top: -13px
-}
 
 
 .subscribe {
@@ -876,3 +859,20 @@ h3 {
 
 
 
+/* Стили для заголовка внутри секции (если он там есть) */
+#premature-optimization h2, 
+#premature-optimization .section-title {
+  font-family: "Neucha", cursive !important;
+}
+
+/* Стили для вставленного блока с текстом */
+#premature-optimization > *:first-child,
+#premature-optimization > *:first-child p,
+#premature-optimization > *:first-child li {
+  /* Важно: Open Sans для обычного текста */
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 16px; /* Стандарт для Open Sans в таких макетах */
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ffffff;
+}
