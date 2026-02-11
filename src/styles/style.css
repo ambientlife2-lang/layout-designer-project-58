@@ -341,7 +341,13 @@ h3 {
 }
 
 /* Секция IKEA */
+header {
+    margin-top: - 6px;
+}
 
+.ikea_effect {
+    margin-top: -1px;
+}
 
 .ikea-effect__row {
     display: flex;
@@ -418,7 +424,7 @@ h3 {
 
 /* Преждевременная оптимизация */
  .premature-optimization {
-    margin-top: -47px;
+    margin-top: -2px;
  }
 
 .premature-optimization__row {
@@ -660,6 +666,9 @@ h3 {
 }
 
 /* Ошибка планирования */
+.errors-in-planning {
+    margin-top: -15px;
+}
 
 .errors-in-planning__row {
     display: flex;
@@ -742,7 +751,9 @@ h3 {
 }
 
 /*footer*/
-
+.footer {
+    margin-top: -13px
+}
 
 
 .subscribe {
