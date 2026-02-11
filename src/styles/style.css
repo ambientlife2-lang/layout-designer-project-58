@@ -870,3 +870,39 @@ header {
     vertical-align: top;
     align-items: stretch;
 }
+
+
+/* Стилизуем первый элемент внутри секции (тот самый вставленный блок) */
+#premature-optimization > *:first-child {
+  /* Цвета и шрифт */
+  color: #ffffff;
+  font-family: "Neucha", sans-serif;
+  font-size: 16px; /* Подбери под макет, обычно 18 или 20 */
+  line-height: 1.6;
+
+  /* Внутренний отступ и та самая серая полоска слева */
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2); /* Тонкая полупрозрачная линия */
+  
+  /* Внешние отступы, чтобы не «толкать» лишнего */
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Стилизуем всё, что может быть внутри этого блока (p, ul, li) */
+#premature-optimization > *:first-child * {
+  color: inherit;
+  font-family: inherit;
+  margin-bottom: 10px; /* Отступ между абзацами внутри блока */
+}
+
+/* Убираем отступ у последнего элемента внутри, чтобы не раздувать секцию */
+#premature-optimization > *:first-child *:last-child {
+  margin-bottom: 0;
+}
+
+/* Если внутри есть список, вернем ему маркеры, но уберем лишние паддинги */
+#premature-optimization > *:first-child ul {
+  list-style: disc;
+  padding-left: 20px;
+}
