@@ -417,7 +417,9 @@ h3 {
 }
 
 /* Преждевременная оптимизация */
-
+ .premature-optimization {
+    margin-top: -47px;
+ }
 
 .premature-optimization__row {
     display: flex;
