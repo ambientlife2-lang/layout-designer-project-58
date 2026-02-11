@@ -859,20 +859,32 @@ h3 {
 
 
 
-/* Стили для заголовка внутри секции (если он там есть) */
-#premature-optimization h2, 
-#premature-optimization .section-title {
-  font-family: "Neucha", cursive !important;
+/* 1. Сначала красим всё внутри вставленного блока в белый и ставим Open Sans */
+#premature-optimization > *:first-child * {
+  color: #ffffff; /* Или var(--color-white) */
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-/* Стили для вставленного блока с текстом */
-#premature-optimization > *:first-child,
-#premature-optimization > *:first-child p,
-#premature-optimization > *:first-child li {
-  /* Важно: Open Sans для обычного текста */
-  font-family: "Open Sans", sans-serif !important;
-  font-size: 16px; /* Стандарт для Open Sans в таких макетах */
-  font-weight: 400;
-  line-height: 1.6;
-  color: #ffffff;
+/* 2. А теперь ТОЧЕЧНО выбираем заголовок, чтобы он был Neucha и оранжевым */
+#premature-optimization h2 {
+  color: var(--primary) !important;
+  font-family: "Neucha", cursive !important;
+  font-size: 52px; /* Заголовки в этом макете обычно крупные */
+  margin-bottom: 30px;
+}
+
+/* 3. Убираем отступы у последнего элемента, чтобы не двигать футер */
+#premature-optimization > *:first-child *:last-child {
+  margin-bottom: 0;
+}
+
+/* 4. Списки */
+#premature-optimization ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }
