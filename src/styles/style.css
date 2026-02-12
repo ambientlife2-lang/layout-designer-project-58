@@ -860,17 +860,12 @@ h3 {
 
 
 
-/* Находим тот самый DIV с инлайн-стилями внутри секции */
-#premature-optimization div[style*="margin-top: 30px"] {
-  margin-top: 30px !important;
-  /* Убираем лишние отступы самого контейнера, если они мешают */
-  padding: 0; 
-}
+
 
 /* Стилизуем заголовок "Random Content" */
 #premature-optimization div[style*="margin-top: 30px"] h2 {
   font-family: "Neucha", cursive !important;
-  font-size: 52px !important; /* Тот самый крупный размер */
+  font-size: 53px !important; /* Тот самый крупный размер */
   color: var(--primary) !important; /* Оранжевый цвет (var(--primary)) */
   line-height: 1.2 !important;
   margin-bottom: 20px !important;
