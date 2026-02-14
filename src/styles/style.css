@@ -153,8 +153,7 @@ h3 {
 
 .hero__content {
     display: flex;
-    justify-content: space-between;
-
+   
 }
 
 
@@ -175,9 +174,7 @@ h3 {
 
 
 .flex-basis {
-   flex-basis: 50%;
-   flex-grow: 1;
-   flex-shrink: 1;
+ flex: 1;
    
 }
 
