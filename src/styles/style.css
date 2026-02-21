@@ -93,6 +93,12 @@ h3 {
     font-size: 34px;
 }
 
+
+
+
+
+
+
 .hero-light {
     background: var(--color-light);
     
@@ -121,6 +127,9 @@ h3 {
     
 }
 
+.header {
+    margin-top: -6px;
+}
 
 
 .hero__text p:not(:last-of-type) {
