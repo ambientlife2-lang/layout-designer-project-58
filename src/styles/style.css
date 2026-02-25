@@ -872,31 +872,35 @@ h3 {
 
 
 /* Стилизуем заголовок "Random Content" */
+/* Стили специально для вставленного динамического блока */
 #premature-optimization div[style*="margin-top: 30px"] h2 {
-  font-family: "Neucha", cursive !important;
-  font-size: 60px !important; /* Тот самый крупный размер */
-  color: var(--primary) !important; /* Оранжевый цвет (var(--primary)) */
-  line-height: 1.2em !important;
-  margin-bottom: 20px !important;
-  margin-top: 0 !important;
+    font-family: "Neucha", cursive !important;
+    font-size: 60px !important; /* Строго по ТЗ */
+    line-height: 1.2em !important; /* Строго по ТЗ */
+    color: var(--primary) !important;
+    margin-top: 0 !important;
+    margin-bottom: 24px !important;
 }
 
-/* Стилизуем текст (абзацы и списки) внутри этого блока */
 #premature-optimization div[style*="margin-top: 30px"] p,
 #premature-optimization div[style*="margin-top: 30px"] li {
-  font-family: "Open Sans", sans-serif !important;
-  font-size: 16px !important;
-  color: #ffffff !important;
-  line-height: 1.6em !important;
-  margin-bottom: 15px !important;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.6em !important; /* Строго по ТЗ */
+    color: var(--color-white) !important;
+    margin-bottom: 16px !important;
 }
 
-/* Настройка списка, чтобы точки были видны и аккуратны */
+/* Убираем отступ у последнего элемента, чтобы не "толкать" футер вниз */
+#premature-optimization div[style*="margin-top: 30px"] *:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Настройка маркеров списка */
 #premature-optimization div[style*="margin-top: 30px"] ul {
-  list-style: disc !important;
-  padding-left: 20px !important;
-  margin-bottom: 15px !important;
+    list-style: disc !important;
+    padding-left: 20px !important;
+    margin-bottom: 16px !important;
 }
-
 /* Убираем отступ у самого последнего элемента, чтобы не раздувать футер */
 
