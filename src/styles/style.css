@@ -381,7 +381,6 @@ h3 {
     font-weight: 400;
     font-size: 34px;
     line-height: 40px;
-    letter-spacing: 0%;
     color: var(--dark);
 }
 
@@ -418,6 +417,10 @@ h3 {
 }
 
 /* Преждевременная оптимизация */
+
+.premature-optimization {
+    margin-top: -5px;
+}
 
 .premature-optimization__row {
     display: flex;
@@ -495,9 +498,7 @@ h3 {
 }
 
 /* Искажение новизны */
-.distortion-of-novelty {
-    margin-top: -5px;
-}
+
 
 
 
