@@ -406,6 +406,7 @@ h3 {
 .ikea-effect__columns {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -487,6 +488,7 @@ h3 {
 
 .premature-optimization__columns {
     display: flex;
+    align-items: flex-start;
     gap: 30px
 }
 
@@ -653,6 +655,7 @@ h3 {
 
 .hyperbolic-depreciation__columns {
     display: flex;
+    align-items: flex-start;
     gap: 30px
 }
 
@@ -734,6 +737,7 @@ h3 {
 
 .errors-in-planning__columns {
     display: flex;
+    align-items: flex-start;
     gap: 30px
 }
 
